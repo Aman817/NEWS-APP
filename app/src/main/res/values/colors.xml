@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03F8BF</color>
+    <color name="colorPrimaryDark">#03F8BF</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorBackground">#f9f9fa</color>
+    <color name="colorTextSubtitle">#4e4e4e</color>
+    <color name="colorTextTitle">#262626</color>
+    <color name="logoback">#EF2E4B</color>
+    <color name="logopro">#f9f9fa</color>
+    <color name="text">#262626</color>
+
+</resources>

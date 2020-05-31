@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.newsapp.MainActivity"
+    >
+
+
+    <item
+        android:id="@+id/search_bar"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+    <item
+        android:icon="@drawable/ic_sort"
+        android:title="Sort"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/action_setting"
+                android:orderInCategory="100"
+                android:title="Setting"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+
+
+</menu>
+

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="headlines">Headlines</string>
+    <string name="title">Title</string>
+    <string name="textmessage">Text Message</string>
+    <string name="author">Author</string>
+    <string name="desc">Desc</string>
+    <string name="source">Source</string>
+</resources>

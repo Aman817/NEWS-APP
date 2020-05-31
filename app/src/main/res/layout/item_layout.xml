@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="7dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:transitionName="img"
+                tools:ignore="UnusedAttribute"
+                />
+
+            <ImageView
+                android:id="@+id/shadow_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignBottom="@id/img" />
+
+            <ProgressBar
+                android:id="@+id/prograss_load_photo"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/title"
+                android:layout_alignTop="@+id/layoutDate"
+                android:layout_alignEnd="@id/layoutDate"
+                android:layout_marginEnd="160dp"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:fontFamily="@font/brandon_grotesque_bold_italic"
+                android:text="@string/author"
+                android:textColor="@android:color/white" />
+
+            <FrameLayout
+                android:id="@+id/layoutDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-50dp"
+                android:layout_marginEnd="20dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:id="@+id/publishedAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="01 January 1990"
+                    android:fontFamily="@font/brandon_grotesque_bold_italic"
+                    android:textColor="@color/logopro" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/brandon_grotesque_bold_italic"
+                android:text="@string/title"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/brandon_grotesque_bold_italic"
+                android:text="@string/desc" />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/desc"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/brandon_grotesque_bold_italic"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/source"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/desc"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/source"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:fontFamily="@font/brandon_grotesque_bold_italic"
+                android:text="Time" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
